@@ -1,9 +1,9 @@
 package com.example.hw5_2.ui.activity
 
+import LoveCalculatorFragment
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hw5_2.R
-import com.example.hw5_2.ui.fragment.LoveCalculatorFragment
 
 class MainActivity : AppCompatActivity() {
 

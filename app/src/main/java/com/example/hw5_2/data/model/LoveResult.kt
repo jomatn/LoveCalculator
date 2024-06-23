@@ -1,4 +1,4 @@
-package com.example.hw5_2
+package com.example.hw5_2.data.model
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
