@@ -1,4 +1,4 @@
-package com.example.hw5_2.data
+package com.example.hw5_2.data.api
 
 import com.example.hw5_2.LoveResult
 import retrofit2.Call

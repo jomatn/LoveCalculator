@@ -1,6 +1,7 @@
-package com.example.hw5_2.data
+package com.example.hw5_2
 
 import android.app.Application
+import com.example.hw5_2.data.api.LoveApiServer
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
