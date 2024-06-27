@@ -1,6 +1,5 @@
-package com.example.hw5_2.ui.fragment
+package com.example.hw5_2.ui.fragment.Love
 
-import LoveCalculatorFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

@@ -1,4 +1,4 @@
-package com.example.hw5_2.ui.fragment
+package com.example.hw5_2.ui.fragment.Love
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

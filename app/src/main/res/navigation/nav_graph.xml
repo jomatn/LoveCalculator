@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onStartFragment">
+
+    <fragment
+        android:id="@+id/onStartFragment"
+        android:name="com.example.hw5_2.ui.fragment.start.OnStartFragment"
+        android:label="fragment_on_start"
+        tools:layout="@layout/fragment_on_start" >
+        <action
+            android:id="@+id/action_onStartFragment_to_onBoardFragment"
+            app:destination="@id/onBoardFragment" />
+        <action
+            android:id="@+id/action_onStartFragment_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.hw5_2.ui.fragment.OnBoard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loveCalculatorFragment"
+        android:name="com.example.hw5_2.ui.fragment.Love.LoveCalculatorFragment"
+        android:label="LoveCalculatorFragment" />
+</navigation>

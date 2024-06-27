@@ -1,3 +1,5 @@
+package com.example.hw5_2.ui.fragment.Love
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.hw5_2.R
 import com.example.hw5_2.databinding.FragmentLoveCalculatorBinding
-import com.example.hw5_2.ui.fragment.LoveCalculatorViewModel
-import com.example.hw5_2.ui.fragment.ResultFragment
 
 class LoveCalculatorFragment : Fragment() {
 
