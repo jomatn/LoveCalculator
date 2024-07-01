@@ -13,13 +13,14 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class OnBoardFragment : Fragment() {
 
-    private lateinit var binding: FragmentOnBoardBinding
+    private val binding by lazy {
+        FragmentOnBoardBinding.inflate(layoutInflater)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentOnBoardBinding.inflate(inflater, container, false)
         return binding.root
     }
 
