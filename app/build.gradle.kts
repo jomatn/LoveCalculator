@@ -73,5 +73,8 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
 
+    val lottieVersion = "6.4.1"
+    implementation ("com.airbnb.android:lottie:$lottieVersion")
+
 
 }

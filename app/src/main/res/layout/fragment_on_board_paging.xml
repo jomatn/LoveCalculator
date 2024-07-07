@@ -19,11 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:background="@drawable/img_start" />
+       <com.airbnb.lottie.LottieAnimationView
+           android:layout_width="400dp"
+           android:layout_height="400dp"
+           android:id="@+id/lottie"
+           app:lottie_autoPlay="true"
+           app:lottie_loop="true"/>
 
         <TextView
             android:id="@+id/tv_title"

@@ -29,5 +29,26 @@
     <fragment
         android:id="@+id/loveCalculatorFragment"
         android:name="com.example.hw5_2.ui.fragment.Love.LoveCalculatorFragment"
-        android:label="LoveCalculatorFragment" />
+        android:label="LoveCalculatorFragment" >
+        <action
+            android:id="@+id/action_loveCalculatorFragment_to_waitingFragment2"
+            app:destination="@id/waitingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waitingFragment"
+        android:name="com.example.hw5_2.WaitingFragment"
+        android:label="WaitingFragment" >
+        <action
+            android:id="@+id/action_waitingFragment_to_resultFragment2"
+            app:destination="@id/resultFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment2"
+        android:name="com.example.hw5_2.ui.fragment.Love.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment2_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
 </navigation>

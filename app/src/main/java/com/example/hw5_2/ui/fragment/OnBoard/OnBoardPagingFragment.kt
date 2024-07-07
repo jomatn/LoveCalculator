@@ -11,14 +11,13 @@ import com.example.hw5_2.R
 import com.example.hw5_2.databinding.FragmentOnBoardPagingBinding
 
 class OnBoardPagingFragment : Fragment() {
-    private val binding by lazy {
-        FragmentOnBoardPagingBinding.inflate(layoutInflater)
-    }
+    private lateinit var binding: FragmentOnBoardPagingBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        binding = FragmentOnBoardPagingBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -34,17 +33,17 @@ class OnBoardPagingFragment : Fragment() {
                 0 -> {
                     tvTitle.text = "Have a good time"
                     tvDescription.text = "You should take the time to help those who need you"
-                    imageView.setImageResource(R.drawable.img_onboard_1)
+                    lottie.setAnimation(R.raw.lovegirl)
                 }
                 1 -> {
                     tvTitle.text = "Cherishing love"
                     tvDescription.text = "It's now no longer possible for you to cherish love"
-                    imageView.setImageResource(R.drawable.img_onboard_2)
+                    lottie.setAnimation(R.raw.lovebirds)
                 }
                 2 -> {
                     tvTitle.text = "Have a breakup?"
                     tvDescription.text = "We have made the correction for you don't worry. Maybe someone is waiting for you!"
-                    imageView.setImageResource(R.drawable.img_onboard_3)
+                    lottie.setAnimation(R.raw.heart)
                     btnStart.visibility = View.VISIBLE
                     btnStart.setOnClickListener {
                         Pref.setOnboardingComplete(requireContext(), true)

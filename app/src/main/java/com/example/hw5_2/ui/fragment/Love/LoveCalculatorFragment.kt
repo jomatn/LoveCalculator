@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import com.example.hw5_2.R
+import com.example.hw5_2.data.model.LoveResult
 import com.example.hw5_2.databinding.FragmentLoveCalculatorBinding
 
 class LoveCalculatorFragment : Fragment() {
@@ -18,6 +21,8 @@ class LoveCalculatorFragment : Fragment() {
     private val viewModel by lazy {
         ViewModelProvider(this)[LoveCalculatorViewModel::class.java]
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,6 +51,7 @@ class LoveCalculatorFragment : Fragment() {
                 secondName = secondName
             ).observe(viewLifecycleOwner) { loveResults ->
                 if (loveResults != null) {
+
                     val percentage = loveResults.percentage.toIntOrNull() ?: 0
                     val bundle = Bundle().apply {
                         putString("firstName", firstName)
